@@ -61,7 +61,7 @@ if os.path.exists(ssr_config_file):
 
     for i in range(len(j['configs'])):
         j['configs'][i]['server'] = arukas_server[i]
-        j['configs'][i]['service_port'] = arukas_port[i]
+        j['configs'][i]['server_port'] = arukas_port[i]
 
     with open(ssr_config_file, 'w') as f:
         json.dump(j, f, indent=4)
